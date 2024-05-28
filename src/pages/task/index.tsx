@@ -33,6 +33,7 @@ export default function task() {
         </Link>
       </Title>
 
+      <Link href={"/lessons"} >
       <Tasks>
         <TasksName>
           Desenvolvimento de Algorítmo
@@ -47,6 +48,7 @@ export default function task() {
           <Hours>17:57</Hours>
         </TasksDate>
       </Tasks>
+      </Link>
 
       <Tasks>
         <TasksName>

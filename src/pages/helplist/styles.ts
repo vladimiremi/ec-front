@@ -5,77 +5,75 @@ export const Container = styled.div`
   height: 100vh;
   width: 100vw;
   flex-direction: column;
-  color: black;
+  overflow-y: scroll;
 `;
-export const Teacher = styled.div`
-   align-items: center;
-  display: flex;
+export const Title = styled.div`
   justify-content: space-between;
-  padding-top: 128px;
-  text-align: end;
-  margin-left: 24px;
-  margin-right: 24px;
-  font-size: 25px;
-  color: #575656;
+  display: flex;
+  flex: 1;
+  color: #0d47a1;
+  font-size: 34px;
+  font-weight: bold;
+  padding-right: 24px;
+  padding-top: 60px;
 `;
 
-export const Back = styled.button`
+export const Add = styled.button`
   justify-content: center;
   align-items: center;
   display: flex;
   background-color: #f1f4f8;
   text-align: end;
-  margin-right: 24px;
-  font-size: 25px;
+  margin-left: 24px;
+  font-size: 18px;
   border-radius: 25px;
   height: 44px;
   width: 44px;
 `;
-
-export const Title = styled.div`
-  margin-top: 44px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  align-items: center;
-  text-align: center;
-  background-color: #f1f4f8;
-  height: 64px;
-  font-size: 24px;
-`;
-export const About = styled.div`
+export const Tasks = styled.button`
+  flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 44px;
-  text-align: center;
+  margin-top: 24px;
+  width: 100vw;
+  height: 75px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #3c3939;
   background-color: #f1f4f8;
-  height: 200px;
-  width: 90%;
-  font-size: 20px;
-  margin-left: 5%;
-  border-radius: 20px;
-`;
-export const Button = styled.div`
-  display: flex;
   justify-content: space-between;
-  margin: 200px 24px 0px 24px;
 `;
-export const HelpMe = styled.button`
-  background-color: yellow;
-  border-radius: 10px;
-  border: 1px solid gray;
-  width: 150px;
-  font-weight: bold;
-  height: 50px;
+
+export const TasksDate = styled.div`
+  flex-direction: column;
+  display: flex;
+  background-color: #e5ebf2;
+  font-size: 12px;
+  text-align: center;
+  height: 75px;
+  width: 100px;
+  padding-top: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+ `;
+
+export const TasksName = styled.div`
+  flex-direction: column;
+  display: flex;
+  padding-top: 25px;
+  padding-left: 24px;
 `;
-export const Finish = styled.button`
-  color: #ffffff;
-  background-color: green;
-  border-radius: 10px;
-  border: 1px solid gray;
-  width: 150px;
-  height: 50px;
+
+export const Status = styled.div`
+  gap: 10px;
+  display: flex;
+  align-items: center;
 `;
+
+export const Hours = styled.div`
+  text-align: center;
+  font-size: 12px;
+`;
+
 export const Footer = styled.div`
   position: sticky;
   justify-content: center;
@@ -83,7 +81,7 @@ export const Footer = styled.div`
   display: flex;
   flex-direction: row;
   border-top: 2px solid #0D47A1;
-  top: 840px;
+  top: 880px;
   bottom: 34px;
   padding: 10px 0px 10px 0px;
 `;
